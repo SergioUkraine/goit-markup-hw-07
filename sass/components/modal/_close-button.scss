@@ -1,0 +1,36 @@
+.close-button {
+    width: 30px;
+    height: 30px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 50%;
+    border-color: rgba(0, 0, 0, 0.1);
+    background-color: transparent;
+
+    &__image {
+        fill: black;
+
+        transition-property: fill;
+        transition-duration: $animation-duration;
+        transition-timing-function: $animation-time-function;
+    }
+
+    &:hover &__image,
+    &:focus &__image {
+        fill: $accent-color;
+    }
+
+    &--position{
+        position: absolute;
+        top: 8px;
+        right: 8px;
+    }
+}
+
+
+

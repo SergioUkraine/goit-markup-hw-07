@@ -1,0 +1,23 @@
+.address {
+    min-width: 231px;
+
+    &__list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    &__item:not(:last-child) {
+        margin-bottom: 9px;
+    }
+
+    &__link {
+        text-decoration: none;
+        color: $footer-contacts-color;
+        font-style: normal;
+    }
+
+    &__link--color {
+        color: $secondary-text-color;
+    }
+}

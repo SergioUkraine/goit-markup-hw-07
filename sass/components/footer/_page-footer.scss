@@ -1,0 +1,85 @@
+.footer{
+    background-color: $footer-hero-color;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    &__container{
+        display: flex;
+        align-items: baseline;
+        overflow: hidden;
+    }
+
+    &__logo {
+        color: $secondary-text-color;
+        margin-bottom: 20px;
+    }
+
+    &__title {
+        padding: 0;
+        margin: 0;
+        margin-bottom: 20px;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.14;
+        text-transform: uppercase;
+        color: $secondary-text-color;
+    }
+
+    &__join{
+        margin-right: 93px;
+    }
+
+    &__subscribe{
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__input-box {
+        display: flex;
+    }
+
+    &__email {
+        width: 358px;
+        height: 50px;
+        padding: 15px 16px;
+        margin-right: 12px;
+    
+        color: $secondary-text-color;
+        font-size: 16px;
+        line-height: 1.25;
+        letter-spacing: 0.03em;
+    
+        background-color: $footer-hero-color;
+        border-width: 1px;
+        border-style: solid;
+        border-color: rgba(255, 255, 255, 0.3);
+        border-radius: 4px;
+    
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    }
+    
+    &__email::placeholder {
+        color: rgba(255, 255, 255, 0.6);
+    }
+
+    &__button{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__address {
+        margin-right: 70px;
+    }
+}
+
+.socials__link {
+    &.footer__socials {
+        background-color: $footer-links-bg-color;
+    }
+
+    &.footer__socials {
+        fill: $secondary-text-color;
+    }
+}
+

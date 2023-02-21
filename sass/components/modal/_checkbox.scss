@@ -1,0 +1,76 @@
+.checkbox {
+    display: flex;
+    justify-content: center;
+
+    &--margin{
+        margin-bottom: 30px;
+    }
+
+    &__input {
+        position: absolute;
+        clip: rect(0 0 0 0);
+        clip-path: inset(50%);
+        height: 1px;
+        overflow: hidden;
+        white-space: nowrap;
+        width: 1px;
+    }
+
+    &__label {
+        position: relative;
+        display: flex;
+        align-items: center;
+    }
+
+    &__text {
+        padding-left: 24px;
+        margin-right: 0.5em;
+    }
+
+    &__link {
+        color: $accent-color;
+        transition-property: color;
+        transition-duration: $animation-duration;
+        transition-timing-function: $animation-time-function;
+    }
+
+    &__link:hover,
+    &__link:focus {
+        color: $secondary-accent-color;
+    }
+
+    &__icon {
+        position: absolute;
+        transition-property: opacity, fill;
+        transition-duration: $animation-duration;
+        transition-timing-function: $animation-time-function;
+    }
+
+    &__icon--unchecked {
+        fill: $primary-header-color;
+    }
+
+    &__icon--checked {
+        fill: $accent-color;
+        opacity: 0;
+    }
+
+
+    &__input:focus+&__label &__icon--unchecked,
+    &__input:focus+&__label &__icon--checked,
+    &__input:hover+&__label &__icon--unchecked,
+    &__input:hover+&__label &__icon--checked {
+        fill: $secondary-accent-color;
+    }
+
+    &__input:checked+&__label &__icon--checked {
+        opacity: 1;
+    }
+
+    &__input:checked+&__label &__icon--unchecked {
+        opacity: 0;
+    }
+}
+
+
+
