@@ -1,8 +1,15 @@
 .features {
     padding-top: 94px;
+
+    &__visually-hidden{
+        margin: 0;
+        padding: 0;
+    }
     
     &__list {
         display: flex;
+        margin: 0;
+        padding: 0;
         list-style: none;
     }
 
