@@ -419,9 +419,9 @@ body {
 }
 
 .team {
-  background-color: #F5F4FA;
   padding-top: 94px;
   padding-bottom: 94px;
+  background-color: #F5F4FA;
 }
 .team__title {
   margin: 0 0 50px 0;
