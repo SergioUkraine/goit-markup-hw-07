@@ -77,7 +77,9 @@
     &.footer__socials {
         background-color: $footer-links-bg-color;
     }
+}
 
+.socials__icon {
     &.footer__socials {
         fill: $secondary-text-color;
     }

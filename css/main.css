@@ -79,7 +79,7 @@ body {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   text-decoration: none;
-  color: inherit;
+  color: #212121;
 }
 .navigation__link--current {
   position: relative;
@@ -208,7 +208,8 @@ body {
 .socials__link.footer__socials {
   background-color: rgba(255, 255, 255, 0.1);
 }
-.socials__link.footer__socials {
+
+.socials__icon.footer__socials {
   fill: #FFFFFF;
 }
 
@@ -310,6 +311,10 @@ body {
   font-size: 44px;
   line-height: 1.36;
   text-transform: uppercase;
+}
+
+.hero__button {
+  min-width: 216px;
 }
 
 .overlay {
